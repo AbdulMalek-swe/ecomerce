@@ -1,0 +1,116 @@
+@import "../../global/mixins.scss";
+
+.new-arrival-page {
+    width: 100%;
+    padding: 2% 0 10%;
+
+    .section-new-arrival {
+
+        .block3-new-arrival {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2%;
+
+            .b3 {
+                background-color: white;
+                width: 49%;
+                border: 1px solid rgb(208, 208, 208);
+                padding-top: 0% !important;
+
+                .headShop {
+                    display: flex;
+                    height: 55px;
+                    margin-top: 0%;
+                    align-items: center;
+                    justify-content: space-between;
+                    background-color: whitesmoke !important;
+
+                    h3 {
+                        font-size: 18px !important;
+                        margin-left: 2%;
+                        margin-bottom: 0% !important;
+                    }
+                }
+
+                .shopStore {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    padding: 2% 0 0%;
+                    background-color: white;
+
+                    .bloc_prod {
+                        padding: 4% 0 3.8%;
+                        width: 90%;
+                        border: none;
+                        margin: auto;
+
+                        img {
+                            width: 100%;
+                        }
+
+                        h4 {
+                            display: flex;
+                            flex-direction: column;
+                            font-size: 14px !important;
+                            text-align: start;
+                            border-radius: 4px;
+                            margin: 1rem 0 0% !important;
+
+                            b {
+                                background: #ff990038;
+                                color: #FF9900;
+                                padding: 5px 1rem 5px 1rem;
+                                border-radius: 4px;
+                                width: max-content;
+                                margin-top: 1rem;
+                            }
+                        }
+                    }
+                }
+
+                .card-prod-group {
+                    .content-prod-rank {
+                        grid-template-columns: repeat(3, 1fr) !important;
+                    }
+                }
+            }
+
+            @include desktop_md {
+                flex-direction: column ;
+
+                .b3 {
+                    width: 100%;
+
+                    &:first-child {
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+/* 
+            .block2 {
+                margin-top: 0% !important;
+                border: none;
+
+                .head {
+                    margin-top: 0% !important;
+                }
+
+                .block {
+                    padding-top: 3.5%;
+                    grid-template-columns: repeat(3, 1fr);
+
+                    .bloc_prod {
+                        width: 97%;
+                        padding-bottom: 1%;
+
+                        .product {
+                            .top {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            } */
+        }
+    }
+}
